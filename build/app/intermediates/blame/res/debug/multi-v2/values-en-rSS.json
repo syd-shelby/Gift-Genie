@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rSS/values-en-rSS.xml",
+            "map": [
+                {
+                    "source": "/Users/deltau/.gradle/caches/transforms-1/files-1.1/twitter-core-3.1.1.aar/85774aff63c3bcd8131f485ca72a3852/res/values-en-rSS/values-en-rSS.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "75",
+                        "endOffsets": "126"
+                    }
+                }
+            ]
+        }
+    ]
+}

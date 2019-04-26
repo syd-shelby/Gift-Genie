@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "460213329919",
+    "firebase_url": "https://gift-genie-f1f6a.firebaseio.com",
+    "project_id": "gift-genie-f1f6a",
+    "storage_bucket": "gift-genie-f1f6a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460213329919:android:c9721fe5c1c5c03f",
+        "android_client_info": {
+          "package_name": "com.thegivers.giftgenie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460213329919-lreua0t4frmbscc4vuclfmh787ip65r4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thegivers.giftgenie",
+            "certificate_hash": "31d56c561a018d91ed5b91699d7333ef46c6cd99"
+          }
+        },
+        {
+          "client_id": "460213329919-u3q09cgjai0qbriah4cvugh8mdvhk3iq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjdGkCLIy3IbV2QPw_8IiLz-1SlQJ4l48"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "460213329919-u3q09cgjai0qbriah4cvugh8mdvhk3iq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
