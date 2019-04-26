@@ -1,284 +1,149 @@
 import 'package:flutter/material.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import 'package:gift_genie/bottomNavigation.dart';
-import 'package:gift_genie/auth/authPages/registerPage.dart';
-import 'package:gift_genie/auth/state_widget.dart';
-
-enum AuthStatus {
-  notDetermined,
-  notSignedIn,
-  signedIn,
-}
+import 'package:gift_genie/auth/authPages/signInModule.dart';
+import 'package:gift_genie/utils/theme.dart' as theme;
+import 'package:gift_genie/auth/authPages/signUpModule.dart';
 
 class LoginPage extends StatefulWidget {
+  LoginPage({Key key}) : super(key: key);
+
   @override
-  _LoginPageState createState() => _LoginPageState();
+  _LoginPageState createState() => new _LoginPageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
-  final _formKey = GlobalKey<FormState>();
+class _LoginPageState extends State<LoginPage> with TickerProviderStateMixin {
+  PageController _pageController;
+  PageView _pageView;
+  int _currentPage = 0;
 
-  String _email, _password;
-  bool _isObscure = true;
-  Color _eyeColor;
-  List _loginMethod = [
-    {
-      "title": "google",
-      "icon": MdiIcons.google,
-      "page": "googleLogin",
-      "id": 0,
-    },
-    {
-      "title": "twitter",
-      "icon": MdiIcons.twitter,
-      "page": "twitterLogin",
-      "id": 1,
-    },
-  ];
+  @override
+  void initState() {
+    super.initState();
+    _pageController = new PageController();
+    _pageView = new PageView(
+      controller: _pageController,
+      children: <Widget>[
+        new SignInModule(),
+        new SignUpModule(),
+      ],
+      onPageChanged: (index) {
+        setState(() {
+          _currentPage = index;
+        });
+      },
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        body: Form(
-            key: _formKey,
-            child: ListView(
-              padding: EdgeInsets.symmetric(horizontal: 22.0),
-              children: <Widget>[
-                SizedBox(
-                  height: kToolbarHeight,
-                ),
-                buildTitle(),
-                buildTitleLine(),
-                SizedBox(height: 70.0),
-                buildEmailTextField(),
-                SizedBox(height: 30.0),
-                buildPasswordTextField(context),
-                buildForgetPasswordText(context),
-                SizedBox(height: 60.0),
-                buildLoginButton(context),
-                SizedBox(height: 30.0),
-                buildOtherLoginText(),
-                buildOtherMethod(context),
-                buildRegisterText(context),
-              ],
-            )),
-    );
-  }
-
-  //Registration Info, at bottom
-  Align buildRegisterText(BuildContext context) {
-    return Align(
-      alignment: Alignment.center,
-      child: Padding(
-        padding: EdgeInsets.only(top: 10.0),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text("Doesn't have a account？"),
-            GestureDetector(
-              child: Text(
-                'Register here',
-                style: TextStyle(color: Colors.green),
-              ),
-              onTap: () {
-                //TODO Go to register page
-                Navigator.of(context).pushNamed("/Registration");
-                //print('Go to register');
-                //Navigator.pop(context);
-              },
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-
-  //Other ways to login, Facebook, Google or Twitter
-  ButtonBar buildOtherMethod(BuildContext context) {
-    return ButtonBar(
-      alignment: MainAxisAlignment.center,
-      children: _loginMethod
-          .map((item) => Builder(
-        builder: (context) {
-          return IconButton(
-              icon: Icon(item['icon'],
-              color: Theme.of(context).iconTheme.color),
-              onPressed: () async {
-                //if (_formKey.currentState.validate()) {
-                  ///only valid
-                  //_formKey.currentState.save();
-
-                  //google
-                  if(item['icon'] == MdiIcons.google) {
-                    await StateWidget.of(context).signInWithGoogle();
-                  }
-                  //twitter
-                  if(item['icon'] == MdiIcons.twitter) {
-                    await StateWidget.of(context).signInWithTwitter();
-                  }
-                  
-                  //await StateWidget.of(context).signInWithGoogle();
-                  if (StateWidget.of(context).state.isSignedIn == true) {
-                    Navigator.of(context).pushNamed("/HomePage");
-                  }
-                  else {
-                    Scaffold.of(context).showSnackBar(new SnackBar(
-                      content: new Text("${item['title']}Login Failed..."),
-                    ));
-                  //}
-                }
-              }
-                /*
-                Scaffold.of(context).showSnackBar(new SnackBar(
-                  content: new Text("${item['title']}Login"),
-                  action: new SnackBarAction(
-                    label: "Cancel",
-                    onPressed: () {},
+    return new Scaffold(
+      /**
+       * SafeArea，让内容显示在安全的可见区域
+       * SafeArea，可以避免一些屏幕有刘海或者凹槽的问题
+       */
+        body: new SafeArea(
+          child: new SingleChildScrollView(
+            /**
+             * 用SingleChildScrollView+Column，避免弹出键盘的时候，出现overFlow现象
+             */
+              child: new Container(
+                /**这里要手动设置container的高度和宽度，不然显示不了
+                 * 利用MediaQuery可以获取到跟屏幕信息有关的数据
+                 */
+                  height: MediaQuery.of(context).size.height,
+                  width: MediaQuery.of(context).size.width,
+                  //设置渐变的背景
+                  decoration: new BoxDecoration(
+                    gradient: theme.Theme.primaryGradient,
                   ),
-                ));
-                */
-              );
-        },
-      )
-      )
-          .toList(),
-    );
-  }
+                  child: new Column(
+                    mainAxisSize: MainAxisSize.max,
+                    children: <Widget>[
+                      new SizedBox(
+                        height: 75,
+                      ),
+                      /**
+                       * 可以用SizeBox这种写法代替Padding：在Row或者Column中单独设置一个方向的间距的时候
+                       */
+//                    new Padding(padding: EdgeInsets.only(top: 75)),
 
-  Align buildOtherLoginText() {
-    return Align(
-        alignment: Alignment.center,
-        child: Text(
-          'Use other accounts to login',
-          style: TextStyle(color: Colors.grey, fontSize: 14.0),
+                      //顶部图片
+                      new Image(
+                          width: 250,
+                          height: 90,
+                          image: new AssetImage("assets/login_logo.png")),
+                      new SizedBox(
+                        height: 20,
+                      ),
+
+                      //中间的Indicator指示器
+                      new Container(
+                        width: 300,
+                        height: 50,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(25)),
+                          color: Color(0x552B2B2B),
+                        ),
+                        child: new Row(
+                          children: <Widget>[
+                            Expanded(
+                                child: new Container(
+                                  /**
+                                   * TODO:暂时不会用Paint去自定义indicator，所以暂时只能这样实现了
+                                   */
+                                  decoration: _currentPage == 0
+                                      ? BoxDecoration(
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(25),
+                                    ),
+                                    color: Colors.white,
+                                  )
+                                      : null,
+                                  child: new Center(
+                                    child: new FlatButton(
+                                      onPressed: () {
+                                        _pageController.animateToPage(0,
+                                            duration: Duration(milliseconds: 500),
+                                            curve: Curves.decelerate);
+                                      },
+                                      child: new Text(
+                                        "Existing",
+                                        style: TextStyle(fontSize: 16),
+                                      ),
+                                    ),
+                                  ),
+                                )),
+                            Expanded(
+                                child: new Container(
+                                  decoration: _currentPage == 1
+                                      ? BoxDecoration(
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(25),
+                                    ),
+                                    color: Colors.white,
+                                  )
+                                      : null,
+                                  child: new Center(
+                                    child: new FlatButton(
+                                      onPressed: () {
+                                        _pageController.animateToPage(1,
+                                            duration: Duration(milliseconds: 500),
+                                            curve: Curves.decelerate);
+                                      },
+                                      child: new Text(
+                                        "New",
+                                        style: TextStyle(fontSize: 16),
+                                      ),
+                                    ),
+                                  ),
+                                )),
+                          ],
+                        ),
+                      ),
+//                      new SignInPage(),
+//                      new SignUpPage(),
+                      new Expanded(child: _pageView),
+                    ],
+                  ))),
         ));
-  }
-
-  //Login Button
-  Align buildLoginButton(BuildContext context) {
-    return Align(
-      child: SizedBox(
-        height: 45.0,
-        width: 270.0,
-        child: RaisedButton(
-          child: Text(
-            'Login',
-            style: Theme.of(context).primaryTextTheme.headline,
-          ),
-          color: Colors.blueGrey,
-          onPressed: () async {
-            if (_formKey.currentState.validate()) {
-              ///only valid
-              _formKey.currentState.save();
-
-              await StateWidget.of(context).signInWithEmail(_email, _password);
-              if(StateWidget.of(context).state.isSignedIn == true) {
-                Navigator.of(context).pushNamed("/HomePage");
-              }
-              else {
-                Scaffold.of(context).showSnackBar(new SnackBar(
-                  content: new Text("Login Failed..."),
-                ));
-              }
-
-              //Test:
-              //Navigator.of(context).pushNamed("HomePage");
-              //print('email:$_email , password:$_password');
-            }
-
-          },
-          shape: StadiumBorder(side: BorderSide()),
-        ),
-      ),
-    );
-  }
-
-  //Forget Password, go to recover page
-  Padding buildForgetPasswordText(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 8.0),
-      child: Align(
-        alignment: Alignment.centerRight,
-        child: FlatButton(
-          child: Text(
-            'Forgot your password？',
-            style: TextStyle(fontSize: 14.0, color: Colors.grey),
-          ),
-          onPressed: () {
-            Navigator.of(context).pushNamed("/RecoverPasswd");
-            //Navigator.pop(context);
-          },
-        ),
-      ),
-    );
-  }
-
-  //Password and Email Field
-  TextFormField buildPasswordTextField(BuildContext context) {
-    return TextFormField(
-      onSaved: (String value) => _password = value,
-      obscureText: _isObscure,
-      validator: (String value) {
-        if (value.isEmpty) {
-          return 'Please enter your password!';
-        }
-      },
-      decoration: InputDecoration(
-          labelText: 'Password',
-          suffixIcon: IconButton(
-              icon: Icon(
-                Icons.remove_red_eye,
-                color: _eyeColor,
-              ),
-              onPressed: () {
-                setState(() {
-                  _isObscure = !_isObscure;
-                  _eyeColor = _isObscure
-                      ? Colors.grey
-                      : Theme.of(context).iconTheme.color;
-                });
-              })),
-    );
-  }
-
-  TextFormField buildEmailTextField() {
-    return TextFormField(
-      decoration: InputDecoration(
-        labelText: 'Emall Address',
-      ),
-      validator: (String value) {
-        var emailReg = RegExp(
-            r"[\w!#$%&'*+/=?^_`{|}~-]+(?:\.[\w!#$%&'*+/=?^_`{|}~-]+)*@(?:[\w](?:[\w-]*[\w])?\.)+[\w](?:[\w-]*[\w])?");
-        if (!emailReg.hasMatch(value)) {
-          return 'Invalid E-mail address!';
-        }
-      },
-      onSaved: (String value) => _email = value,
-    );
-  }
-
-  //Title
-  Padding buildTitleLine() {
-    return Padding(
-      padding: EdgeInsets.only(left: 12.0, top: 4.0),
-      child: Align(
-        alignment: Alignment.bottomLeft,
-        child: Container(
-          color: Colors.black,
-          width: 40.0,
-          height: 2.0,
-        ),
-      ),
-    );
-  }
-
-  Padding buildTitle() {
-    return Padding(
-      padding: EdgeInsets.all(8.0),
-      child: Text(
-        'Login',
-        style: TextStyle(fontSize: 42.0),
-      ),
-    );
   }
 }

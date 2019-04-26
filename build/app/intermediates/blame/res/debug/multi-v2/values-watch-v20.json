@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "/Users/deltau/MyProjects/GitHub/Gift-Genie/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
                     "source": "/Users/deltau/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/dd7d51113b85a745202f350a45ed3d42/res/values-watch-v20/values.xml",

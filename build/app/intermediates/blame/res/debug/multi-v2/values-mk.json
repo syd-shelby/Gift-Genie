@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-mk/values-mk.xml",
+            "outputFile": "/Users/deltau/MyProjects/GitHub/Gift-Genie/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-mk/values-mk.xml",
             "map": [
                 {
                     "source": "/Users/deltau/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/3d7ac4ff8008bd5bfde3ff1ded0ecfc5/res/values-mk/values-mk.xml",

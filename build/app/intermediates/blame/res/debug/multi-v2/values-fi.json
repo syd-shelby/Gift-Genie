@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-fi/values-fi.xml",
+            "outputFile": "/Users/deltau/MyProjects/GitHub/Gift-Genie/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-fi/values-fi.xml",
             "map": [
                 {
                     "source": "/Users/deltau/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/c5c05c047b7e31d140987b0424a115fa/res/values-fi/values.xml",

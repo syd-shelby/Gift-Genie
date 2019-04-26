@@ -1,25 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/deltau/MyProjects/GitHub/Gift-Genie/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
-                {
-                    "source": "/Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/build/app/generated/res/google-services/debug/values/values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,310,392,496,599,719,819",
-                        "endColumns": "143,110,81,103,102,119,99,76",
-                        "endOffsets": "194,305,387,491,594,714,814,891"
-                    },
-                    "to": {
-                        "startLines": "120,121,122,123,124,125,126,127",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "7553,7697,7808,7890,7994,8097,8217,8317",
-                        "endColumns": "143,110,81,103,102,119,99,76",
-                        "endOffsets": "7692,7803,7885,7989,8092,8212,8312,8389"
-                    }
-                },
                 {
                     "source": "/Users/deltau/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/7b90fb60f5728c67c4a2609d961436a7/res/values/values.xml",
                     "from": {
@@ -91,7 +74,24 @@
                     }
                 },
                 {
-                    "source": "/Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/res/values/styles.xml",
+                    "source": "/Users/deltau/MyProjects/GitHub/Gift-Genie/build/app/generated/res/google-services/debug/values/values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,310,392,496,599,719,819",
+                        "endColumns": "143,110,81,103,102,119,99,76",
+                        "endOffsets": "194,305,387,491,594,714,814,891"
+                    },
+                    "to": {
+                        "startLines": "120,121,122,123,124,125,126,127",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "7553,7697,7808,7890,7994,8097,8217,8317",
+                        "endColumns": "143,110,81,103,102,119,99,76",
+                        "endOffsets": "7692,7803,7885,7989,8092,8212,8312,8389"
+                    }
+                },
+                {
+                    "source": "/Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

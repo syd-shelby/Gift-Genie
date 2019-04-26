@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gift_genie/auth/state_widget.dart';
 import 'package:gift_genie/auth/state.dart';
-import 'package:gift_genie/home/homePage.dart';
-import 'package:gift_genie/auth/authPages/loginPage.dart';
 import 'package:flutter/widgets.dart';
 
 class LoadingPage extends StatefulWidget {

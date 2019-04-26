@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-//import 'package:gift_genie/auth/authPages/loginPage.dart';
-import 'package:gift_genie/auth/authPages/loginPage2.dart';
-import 'package:gift_genie/contacts/contactPage2.dart';
-import 'package:gift_genie/home/homePage.dart';
+import 'package:gift_genie/auth/authPages/loginPage.dart';
 import 'package:gift_genie/auth/authPages/recoverPasswdPage.dart';
 import 'package:gift_genie/auth/authPages/registerPage.dart';
 import 'bottomNavigation.dart';

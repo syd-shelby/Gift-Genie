@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gift_genie/utils/user.dart';
 import 'package:gift_genie/calendar/calendarPage.dart';
-//import 'package:gift_genie/contacts/contactPage.dart';
-//import 'package:gift_genie/contacts/contactPage3.dart';
-import 'package:gift_genie/contacts/contactPage4.dart';
+import 'package:gift_genie/contacts/contactPage.dart';
 import 'package:gift_genie/home/homePage.dart';
 import 'package:gift_genie/profile/profilePage.dart';
 import 'package:gift_genie/list/listPage.dart';

@@ -1,18 +1,18 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml:1:1-39:12
-INJECTED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml:1:1-39:12
-INJECTED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml:1:1-39:12
-INJECTED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml:1:1-39:12
+ADDED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml:1:1-39:12
+INJECTED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml:1:1-39:12
+INJECTED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml:1:1-39:12
+INJECTED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml:1:1-39:12
 MERGED from [com.android.support:multidex:1.0.2] /Users/deltau/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/b11aec32a0a0e880b5480e58c44a8a3d/AndroidManifest.xml:17:1-22:12
-MERGED from [:cloud_firestore] /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/build/cloud_firestore/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-7:12
+MERGED from [:cloud_firestore] /Users/deltau/MyProjects/GitHub/Gift-Genie/build/cloud_firestore/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:firebase-firestore:17.1.1] /Users/deltau/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.1.aar/6af82d5418a066530789f4046de4e543/AndroidManifest.xml:2:1-21:12
-MERGED from [:firebase_auth] /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/build/firebase_auth/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-7:12
-MERGED from [:flutter_twitter_login] /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/build/flutter_twitter_login/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-7:12
-MERGED from [:google_sign_in] /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/build/google_sign_in/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-9:12
-MERGED from [:firebase_database] /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/build/firebase_database/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-7:12
-MERGED from [:firebase_core] /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/build/firebase_core/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-7:12
-MERGED from [:firebase_storage] /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/build/firebase_storage/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-7:12
+MERGED from [:firebase_auth] /Users/deltau/MyProjects/GitHub/Gift-Genie/build/firebase_auth/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-7:12
+MERGED from [:flutter_twitter_login] /Users/deltau/MyProjects/GitHub/Gift-Genie/build/flutter_twitter_login/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-7:12
+MERGED from [:google_sign_in] /Users/deltau/MyProjects/GitHub/Gift-Genie/build/google_sign_in/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-9:12
+MERGED from [:firebase_database] /Users/deltau/MyProjects/GitHub/Gift-Genie/build/firebase_database/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-7:12
+MERGED from [:firebase_core] /Users/deltau/MyProjects/GitHub/Gift-Genie/build/firebase_core/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-7:12
+MERGED from [:firebase_storage] /Users/deltau/MyProjects/GitHub/Gift-Genie/build/firebase_storage/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:firebase-core:16.0.4] /Users/deltau/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.4.aar/b503d8348996d553da3fbf38edb720d3/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-storage:16.0.5] /Users/deltau/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.5.aar/1a69c2e0f16d5f0b08eafb426204f4ec/AndroidManifest.xml:15:1-26:12
 MERGED from [com.google.firebase:firebase-auth:16.0.4] /Users/deltau/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.4.aar/8ae3edfcaf30153f3b48b74ad71d42cd/AndroidManifest.xml:17:1-38:12
@@ -47,29 +47,29 @@ MERGED from [com.android.support:support-compat:26.1.0] /Users/deltau/.gradle/ca
 MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/deltau/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/66282baa03b5bab98ba19dcc1fc5cf8d/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:protolite-well-known-types:16.0.0] /Users/deltau/.gradle/caches/transforms-1/files-1.1/protolite-well-known-types-16.0.0.aar/fc175c3c1141923371b8315cffa48e26/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.gms:play-services-measurement-base:16.0.3] /Users/deltau/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.3.aar/386cfd993c91aa93ef122d2adc8e4605/AndroidManifest.xml:2:1-9:12
-INJECTED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml:1:1-39:12
-INJECTED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml:1:1-39:12
-INJECTED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml:1:1-39:12
+INJECTED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml:1:1-39:12
+INJECTED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml:1:1-39:12
+INJECTED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml:1:1-39:12
 	package
-		ADDED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml:2:5-38
-		INJECTED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml:2:5-38
+		INJECTED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml:1:1-39:12
-		INJECTED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml:1:1-39:12
+		INJECTED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml:1:1-39:12
-		INJECTED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml:1:1-39:12
+		INJECTED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml:8:5-66
+ADDED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml:8:5-66
 MERGED from [com.google.firebase:firebase-firestore:17.1.1] /Users/deltau/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.1.aar/6af82d5418a066530789f4046de4e543/AndroidManifest.xml:11:5-67
 MERGED from [com.google.firebase:firebase-firestore:17.1.1] /Users/deltau/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.1.aar/6af82d5418a066530789f4046de4e543/AndroidManifest.xml:11:5-67
-MERGED from [:google_sign_in] /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/build/google_sign_in/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-67
-MERGED from [:google_sign_in] /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/build/google_sign_in/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-67
+MERGED from [:google_sign_in] /Users/deltau/MyProjects/GitHub/Gift-Genie/build/google_sign_in/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-67
+MERGED from [:google_sign_in] /Users/deltau/MyProjects/GitHub/Gift-Genie/build/google_sign_in/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-67
 MERGED from [com.google.firebase:firebase-storage:16.0.5] /Users/deltau/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.5.aar/1a69c2e0f16d5f0b08eafb426204f4ec/AndroidManifest.xml:24:5-67
 MERGED from [com.google.firebase:firebase-storage:16.0.5] /Users/deltau/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.5.aar/1a69c2e0f16d5f0b08eafb426204f4ec/AndroidManifest.xml:24:5-67
 MERGED from [com.google.firebase:firebase-database:16.0.3] /Users/deltau/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.3.aar/ee926cbf099d6ceebb2bbc1c78dbf89d/AndroidManifest.xml:23:5-67
@@ -85,9 +85,9 @@ MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/deltau/.gradle/cach
 MERGED from [com.twitter.sdk.android:twitter-core:3.1.1] /Users/deltau/.gradle/caches/transforms-1/files-1.1/twitter-core-3.1.1.aar/85774aff63c3bcd8131f485ca72a3852/AndroidManifest.xml:25:5-67
 MERGED from [com.twitter.sdk.android:twitter-core:3.1.1] /Users/deltau/.gradle/caches/transforms-1/files-1.1/twitter-core-3.1.1.aar/85774aff63c3bcd8131f485ca72a3852/AndroidManifest.xml:25:5-67
 	android:name
-		ADDED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml:8:22-64
+		ADDED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml:8:22-64
 application
-ADDED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml:15:5-38:19
+ADDED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml:15:5-38:19
 MERGED from [com.google.firebase:firebase-firestore:17.1.1] /Users/deltau/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.1.aar/6af82d5418a066530789f4046de4e543/AndroidManifest.xml:13:5-19:19
 MERGED from [com.google.firebase:firebase-firestore:17.1.1] /Users/deltau/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.1.aar/6af82d5418a066530789f4046de4e543/AndroidManifest.xml:13:5-19:19
 MERGED from [com.google.firebase:firebase-core:16.0.4] /Users/deltau/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.4.aar/b503d8348996d553da3fbf38edb720d3/AndroidManifest.xml:7:5-20
@@ -141,63 +141,63 @@ MERGED from [com.android.support:support-compat:26.1.0] /Users/deltau/.gradle/ca
 MERGED from [com.google.android.gms:play-services-measurement-base:16.0.3] /Users/deltau/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.3.aar/386cfd993c91aa93ef122d2adc8e4605/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-measurement-base:16.0.3] /Users/deltau/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.3.aar/386cfd993c91aa93ef122d2adc8e4605/AndroidManifest.xml:7:5-20
 	android:label
-		ADDED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml:17:9-35
+		ADDED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml:17:9-35
 	android:icon
-		ADDED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml:18:9-43
+		ADDED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml:18:9-43
 	android:name
-		ADDED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml:16:9-57
+		ADDED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml:16:9-57
 activity#com.thegivers.giftgenie.MainActivity
-ADDED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml:19:9-37:20
+ADDED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml:19:9-37:20
 	android:launchMode
-		ADDED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml:21:13-43
+		ADDED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml:21:13-43
 	android:hardwareAccelerated
-		ADDED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml:24:13-47
+		ADDED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml:24:13-47
 	android:windowSoftInputMode
-		ADDED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml:25:13-55
+		ADDED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml:25:13-55
 	android:configChanges
-		ADDED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml:23:13-137
+		ADDED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml:23:13-137
 	android:theme
-		ADDED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml:22:13-47
+		ADDED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml:22:13-47
 	android:name
-		ADDED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml:20:13-41
+		ADDED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml:20:13-41
 meta-data#io.flutter.app.android.SplashScreenUntilFirstFrame
-ADDED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml:30:13-32:40
+ADDED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml:30:13-32:40
 	android:value
-		ADDED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml:32:17-37
+		ADDED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml:32:17-37
 	android:name
-		ADDED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml:31:17-82
+		ADDED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml:31:17-82
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml:33:13-36:29
+ADDED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml:33:13-36:29
 action#android.intent.action.MAIN
-ADDED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml:34:17-68
+ADDED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml:34:17-68
 	android:name
-		ADDED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml:34:25-66
+		ADDED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml:34:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml:35:17-76
+ADDED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml:35:17-76
 	android:name
-		ADDED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml:35:27-74
+		ADDED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml:35:27-74
 uses-sdk
-INJECTED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml
 MERGED from [com.android.support:multidex:1.0.2] /Users/deltau/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/b11aec32a0a0e880b5480e58c44a8a3d/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:multidex:1.0.2] /Users/deltau/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/b11aec32a0a0e880b5480e58c44a8a3d/AndroidManifest.xml:20:5-43
-MERGED from [:cloud_firestore] /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/build/cloud_firestore/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
-MERGED from [:cloud_firestore] /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/build/cloud_firestore/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] /Users/deltau/MyProjects/GitHub/Gift-Genie/build/cloud_firestore/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] /Users/deltau/MyProjects/GitHub/Gift-Genie/build/cloud_firestore/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-firestore:17.1.1] /Users/deltau/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.1.aar/6af82d5418a066530789f4046de4e543/AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-firestore:17.1.1] /Users/deltau/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.1.aar/6af82d5418a066530789f4046de4e543/AndroidManifest.xml:6:5-8:41
-MERGED from [:firebase_auth] /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/build/firebase_auth/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_auth] /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/build/firebase_auth/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
-MERGED from [:flutter_twitter_login] /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/build/flutter_twitter_login/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
-MERGED from [:flutter_twitter_login] /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/build/flutter_twitter_login/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
-MERGED from [:google_sign_in] /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/build/google_sign_in/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
-MERGED from [:google_sign_in] /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/build/google_sign_in/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_database] /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/build/firebase_database/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_database] /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/build/firebase_database/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core] /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/build/firebase_core/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core] /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/build/firebase_core/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_storage] /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/build/firebase_storage/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_storage] /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/build/firebase_storage/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_auth] /Users/deltau/MyProjects/GitHub/Gift-Genie/build/firebase_auth/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_auth] /Users/deltau/MyProjects/GitHub/Gift-Genie/build/firebase_auth/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_twitter_login] /Users/deltau/MyProjects/GitHub/Gift-Genie/build/flutter_twitter_login/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_twitter_login] /Users/deltau/MyProjects/GitHub/Gift-Genie/build/flutter_twitter_login/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:google_sign_in] /Users/deltau/MyProjects/GitHub/Gift-Genie/build/google_sign_in/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:google_sign_in] /Users/deltau/MyProjects/GitHub/Gift-Genie/build/google_sign_in/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_database] /Users/deltau/MyProjects/GitHub/Gift-Genie/build/firebase_database/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_database] /Users/deltau/MyProjects/GitHub/Gift-Genie/build/firebase_database/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] /Users/deltau/MyProjects/GitHub/Gift-Genie/build/firebase_core/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] /Users/deltau/MyProjects/GitHub/Gift-Genie/build/firebase_core/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_storage] /Users/deltau/MyProjects/GitHub/Gift-Genie/build/firebase_storage/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_storage] /Users/deltau/MyProjects/GitHub/Gift-Genie/build/firebase_storage/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-core:16.0.4] /Users/deltau/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.4.aar/b503d8348996d553da3fbf38edb720d3/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-core:16.0.4] /Users/deltau/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.4.aar/b503d8348996d553da3fbf38edb720d3/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-storage:16.0.5] /Users/deltau/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.5.aar/1a69c2e0f16d5f0b08eafb426204f4ec/AndroidManifest.xml:19:5-21:41
@@ -266,18 +266,18 @@ MERGED from [com.google.firebase:protolite-well-known-types:16.0.0] /Users/delta
 MERGED from [com.google.firebase:protolite-well-known-types:16.0.0] /Users/deltau/.gradle/caches/transforms-1/files-1.1/protolite-well-known-types-16.0.0.aar/fc175c3c1141923371b8315cffa48e26/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.gms:play-services-measurement-base:16.0.3] /Users/deltau/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.3.aar/386cfd993c91aa93ef122d2adc8e4605/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-measurement-base:16.0.3] /Users/deltau/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.3.aar/386cfd993c91aa93ef122d2adc8e4605/AndroidManifest.xml:5:5-44
-INJECTED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
 		ADDED from [com.android.support:support-v4:26.1.0] /Users/deltau/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/2f416642c20e6bbd960ac75b09705870/AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
-		INJECTED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/deltau/MyProjects/GitHub/COSC340/testFolder/TheGivers/gift_genie/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/deltau/MyProjects/GitHub/Gift-Genie/android/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-firestore:17.1.1] /Users/deltau/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.1.aar/6af82d5418a066530789f4046de4e543/AndroidManifest.xml:10:5-79
 MERGED from [com.google.firebase:firebase-storage:16.0.5] /Users/deltau/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.5.aar/1a69c2e0f16d5f0b08eafb426204f4ec/AndroidManifest.xml:23:5-79

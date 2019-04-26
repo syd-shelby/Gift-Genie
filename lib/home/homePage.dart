@@ -5,8 +5,6 @@ import 'package:gift_genie/auth/state_widget.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:gift_genie/utils/friend.dart';
 import 'package:intl/intl.dart';
-import 'package:gift_genie/utils/userPair.dart';
-import 'package:gift_genie/auth/authPages/loginPage.dart';
 
 class HomePage extends StatefulWidget {
 
