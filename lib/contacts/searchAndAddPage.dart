@@ -26,6 +26,7 @@ class SeachAndAddPageState extends State<SearchAndAddPage> {
   StateModel _appState;
   String target;
   String myId;
+  String tName = "";
   String _searchText = "";
 
   final dbUE = Firestore.instance.collection("UserEmails");
@@ -104,7 +105,7 @@ class SeachAndAddPageState extends State<SearchAndAddPage> {
                       child: new RaisedButton(
                         child: new Text("Search"),
                         onPressed:() {
-                          getUser();
+                          //getUser();
                           showDialog<Null>(
                             context: context,
                             builder: (BuildContext context) {
@@ -141,6 +142,9 @@ class SeachAndAddPageState extends State<SearchAndAddPage> {
   }
 
   Widget _buildButton() {
+
+    getUser();
+
     return new AlertDialog(
       //title: new Text('标题'),
       content: new SingleChildScrollView(
@@ -174,6 +178,7 @@ class SeachAndAddPageState extends State<SearchAndAddPage> {
   Future<void> getUser() async {
 
     String userIndex;
+    String ttName;
 
     if(!(_searchText == null)) {
       await dbUE.document(_searchText).get().then((DocumentSnapshot ds){
@@ -181,18 +186,27 @@ class SeachAndAddPageState extends State<SearchAndAddPage> {
       });
 
       if(userIndex!=null){
+
+        await db.document(userIndex).get().then((DocumentSnapshot ds){
+          ttName = ds["name"];
+        });
+
         setState(() {
           target = userIndex;
+          tName = ttName;
         });
       }
       else {
         setState(() {
           target = "NOT FOUND";
+          tName = target;
         });
       }
     }
     else return;
   }
+
+
 
   void _sendInvitation() {
 

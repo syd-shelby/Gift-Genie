@@ -59,7 +59,7 @@ class _LoginPageState extends State<LoginPage> with TickerProviderStateMixin {
                     mainAxisSize: MainAxisSize.max,
                     children: <Widget>[
                       new SizedBox(
-                        height: 75,
+                        height: 18,
                       ),
                       /**
                        * 可以用SizeBox这种写法代替Padding：在Row或者Column中单独设置一个方向的间距的时候
@@ -67,10 +67,19 @@ class _LoginPageState extends State<LoginPage> with TickerProviderStateMixin {
 //                    new Padding(padding: EdgeInsets.only(top: 75)),
 
                       //顶部图片
+                      /*
                       new Image(
                           width: 250,
-                          height: 90,
-                          image: new AssetImage("assets/login_logo.png")),
+                          height: 100,
+                          image: new AssetImage("Image/logo.png")),
+                          */
+                      new Container(
+                        child: new Padding(
+                            child: new Image.asset("Images/logo.png"),
+                            padding: EdgeInsets.all(2.0)
+                        ),
+                        alignment: Alignment.center,
+                      ),
                       new SizedBox(
                         height: 20,
                       ),

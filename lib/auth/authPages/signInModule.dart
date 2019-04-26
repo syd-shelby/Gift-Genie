@@ -270,7 +270,9 @@ class _SignInModuleState extends State<SignInModule> {
             gradient: theme.Theme.primaryGradient,
           ),
           child: new Text(
-            "LOGIN", style: new TextStyle(fontSize: 25, color: Colors.white),),
+            "LOGIN", style: new TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 22, color: Colors.grey[700]),),
         ),
         onTap: () async {
           /**利用key来获取widget的状态FormState

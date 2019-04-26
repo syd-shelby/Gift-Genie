@@ -177,7 +177,10 @@ class _SignUpModuleState extends State<SignUpModule> {
           ),
           child: new Text(
             "SIGN UP",
-            style: new TextStyle(fontSize: 25, color: Colors.white),),
+            style: new TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 22,
+                color: Colors.grey[700]),),
         ),
         onTap: () async {
           /**利用key来获取widget的状态FormState
