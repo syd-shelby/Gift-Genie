@@ -9,6 +9,7 @@ class ProductTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return Padding(
       padding: EdgeInsets.all(padding),
       child: Column(
@@ -16,9 +17,13 @@ class ProductTitle extends StatelessWidget {
         // We want to align title and description of recipes left:
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
+
           Text(
             product.name,
-            style: Theme.of(context).textTheme.title,
+            style: Theme
+                .of(context)
+                .textTheme
+                .title,
           ),
           // Empty space:
           SizedBox(height: 10.0),
@@ -28,7 +33,10 @@ class ProductTitle extends StatelessWidget {
               SizedBox(width: 5.0),
               Text(
                 product.price,
-                style: Theme.of(context).textTheme.caption,
+                style: Theme
+                    .of(context)
+                    .textTheme
+                    .caption,
               ),
             ],
           ),

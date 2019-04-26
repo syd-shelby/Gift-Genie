@@ -7,6 +7,8 @@ class Product {
   final String description;
   final String rating;
   final int type;
+  //final int recommended;
+
 
   const Product({
     this.id,
@@ -16,7 +18,8 @@ class Product {
     this.price,
     this.description,
     this.rating,
-    this.type
+    this.type,
+    //this.recommended,
   });
 
   Product.fromMap(Map<String, dynamic> data, String id)
@@ -28,6 +31,7 @@ class Product {
       price: data['Price'],
       description: data['Product Description'],
       rating: data['Rating'],
-      type: 1
+      type: 1,
+      //recommended: 0,
   );
 }

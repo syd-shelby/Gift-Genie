@@ -36,6 +36,7 @@ class ListPageState extends State<ListPage> {
             bottom: TabBar(
               labelColor:  Colors.white,
               tabs: [
+                Tab(icon: Icon(Icons.local_offer, size: _iconSize)),
                 Tab(icon: Icon(Icons.redeem, size: _iconSize)),
                 Tab(icon: Icon(Icons.favorite, size: _iconSize))
               ],
@@ -123,6 +124,7 @@ class ListPageState extends State<ListPage> {
     return TabBarView (
       children: [
         _buildProducts(type: 1),
+        _buildProducts(ids: appState.recommended),
         _buildProducts(ids: appState.favorites),
         //Center(child: Icon(Icons.favorite)),
       ],

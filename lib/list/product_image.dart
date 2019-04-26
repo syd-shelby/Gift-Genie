@@ -7,15 +7,17 @@ class ProductImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return AspectRatio(
         aspectRatio: 16.0 / 9.0,
 
-      child: Image.network(
+      //child: new SingleChildScrollView(
+      child: new Image.network(
         imageURL,
         fit: BoxFit.cover,
 
+      //),
       ),
-
     );
   }
 }

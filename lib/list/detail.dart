@@ -7,6 +7,11 @@ import 'package:gift_genie/list/store.dart';
 import 'package:gift_genie/list/product_image.dart';
 import 'package:gift_genie/list/product_title.dart';
 
+import 'package:url_launcher/url_launcher.dart';
+import 'package:flutter/gestures.dart';
+import 'package:flutter/services.dart';
+
+
 class DetailScreen extends StatefulWidget {
   final Product product;
   final bool inFavorites;
@@ -76,7 +81,7 @@ class _DetailScreenState extends State<DetailScreen>
                 labelColor:  Colors.black,
                 tabs: <Widget>[
                   Tab(text: "Description"),
-                  Tab(text: "Rating"),
+                  Tab(text: "Link to Amazon"),
                 ],
                 controller: _tabController,
               ),
@@ -85,8 +90,8 @@ class _DetailScreenState extends State<DetailScreen>
         },
         body: TabBarView(
           children: <Widget>[
-            IngredientsView(widget.product.description),
-            PreparationView(widget.product.rating),
+            IngredientsView(widget.product.description, widget.product.rating),
+            PreparationView(widget.product.id),
           ],
           controller: _tabController,
         ),
@@ -112,7 +117,9 @@ class _DetailScreenState extends State<DetailScreen>
 
 class IngredientsView extends StatelessWidget {
   final String description;
-  IngredientsView(this.description);
+  final String rating;
+  IngredientsView(this.description, this.rating);
+  //IngredientsView(this.rating);
 
   @override
   Widget build(BuildContext context) {
@@ -124,8 +131,11 @@ class IngredientsView extends StatelessWidget {
           children: <Widget>[
             //new Icon(Icons.done),
             new SizedBox(width: 5.0),
+            new Text("Rating: " + rating),
+            new Text(""),
             new Text(description),
           ],
+
         ),
       );
       // Add spacing between the lines:
@@ -145,19 +155,18 @@ class IngredientsView extends StatelessWidget {
 }
 
 class PreparationView extends StatelessWidget {
-  final String rating;
-  PreparationView(this.rating);
+  final String id;
+  PreparationView(this.id);
 
   @override
   Widget build(BuildContext context) {
-
-    List<Widget> children = new List<Widget>();
+    /*List<Widget> children = new List<Widget>();
     //ingredients.forEach((item) {
     children.add(
       new Column(
-        children: <Widget>[
+        children:[
           new SizedBox(width: 5.0),
-          new Text(rating),
+          new Text("https://www.amazon.com/dp/" + id),
         ],
       ),
     );
@@ -172,13 +181,33 @@ class PreparationView extends StatelessWidget {
     return ListView(
       padding: EdgeInsets.fromLTRB(25.0, 25.0, 25.0, 75.0),
       children: children,
-    );
+    );*/
 
+    String url = "https://www.amazon.com/dp/" + id;
+
+    return Scaffold(
+      body: new Center(
+        child: new RichText(
+          text: new TextSpan(
+            children: [
+              new TextSpan(
+                text: url,
+                style: new TextStyle(color: Colors.blue),
+
+                recognizer: new TapGestureRecognizer()
+                ..onTap = () { launch(url);
+                },
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
 /*
 Center _buildStars(String rating) {
-  var ratingNum = int.parse(rating);
+  var ratingNum = int.p barse(rating);
 child:
   if(ratingNum < 1)
     print(new Icon(Icons.star_half));

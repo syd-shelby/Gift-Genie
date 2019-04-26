@@ -74,6 +74,20 @@ class _StateWidgetState extends State<StateWidget> {
     return [];
   }
 
+  Future<List<String>> getRecommended() async {
+    DocumentSnapshot querySnapshot = await Firestore.instance
+        .collection('Users')
+        .document(state.user.uid)
+        .get();
+    if (querySnapshot.exists &&
+        querySnapshot.data.containsKey('recommended') &&
+        querySnapshot.data['recommended'] is List) {
+      // Create a new List<String> from List<dynamic>
+      return List<String>.from(querySnapshot.data['recommended']);
+    }
+    return [];
+  }
+
   //Google Login and Log out
   Future<Null> signInWithGoogle() async {
     if (googleAccount == null) {
@@ -81,9 +95,10 @@ class _StateWidgetState extends State<StateWidget> {
       googleAccount = await googleSignIn.signIn();
     }
     FirebaseUser firebaseUser = await handleSignInGoogle(googleAccount);
-    //state.user = firebaseUser;
+    state.user = firebaseUser;
     //state.uuser = User(firebaseUser.displayName == null? firebaseUser.email.split("@")[0]:firebaseUser.displayName);
     List<String> favorites = await getFavorites();
+    List<String> recommended = await getRecommended();
 
     setState(() {
       state.isLoading = false;
@@ -92,6 +107,7 @@ class _StateWidgetState extends State<StateWidget> {
       state.isSignedIn = true;
       state.type = LogType.google;
       state.favorites = favorites;
+      state.recommended = recommended;
       getIndex();
       loadUserInfo();
     });
@@ -162,8 +178,17 @@ class _StateWidgetState extends State<StateWidget> {
   //Email/Password Login and Log out
   Future<Null> signInWithEmail(String email, String password) async {
     FirebaseUser firebaseUser = await handleSignInEmail(email, password);
-    if(!firebaseUser.isEmailVerified) { return; }
-    //state.user = firebaseUser;
+
+    state.user = firebaseUser;
+
+    if(!firebaseUser.isEmailVerified) {
+      state.user = null;
+      return;
+    }
+
+    List<String> favorites = await getFavorites();
+    List<String> recommended = await getRecommended();
+
     //state.uuser = User(firebaseUser.displayName == null? firebaseUser.email.split("@")[0]:firebaseUser.displayName);
     setState(() {
       state.isLoading = false;
@@ -171,6 +196,8 @@ class _StateWidgetState extends State<StateWidget> {
       state.uuser = User(firebaseUser.displayName == null? firebaseUser.email.split("@")[0]:firebaseUser.displayName);
       state.isSignedIn = true;
       state.type = LogType.email;
+      state.favorites = favorites;
+      state.recommended = recommended;
       getIndex();
       loadUserInfo();
     });

@@ -16,6 +16,7 @@ class StateModel {
   FirebaseUser user;
   User uuser;
   List<String> favorites;
+  List<String> recommended;
 
   StateModel({
     this.isLoading = false,
@@ -24,5 +25,6 @@ class StateModel {
     this.user = null,
     this.uuser = null,
     this.favorites = null,
+    this.recommended = null
   });
 }
